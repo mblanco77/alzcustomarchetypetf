@@ -1,0 +1,25 @@
+{
+    "name": "617e86e8-e111-4d69-a120-ed3aec64717a",
+    "type": "Microsoft.Authorization/roleDefinitions",
+    "apiVersion": "2018-01-01-preview",
+    "properties": {
+        "roleName": "bankOnline app owner",
+        "description": "Owner for the bankonline management group, it has all permission except modify / delete vnets",
+        "type": "customRole",
+        "permissions": [
+            {
+                "actions": [
+                    "*"
+                ],
+                "notActions": [
+                    "Microsoft.Network/virtualNetworks/write" 
+                ],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ],
+        "assignableScopes": [
+            "${current_scope_resource_id}"
+        ]
+    }
+}

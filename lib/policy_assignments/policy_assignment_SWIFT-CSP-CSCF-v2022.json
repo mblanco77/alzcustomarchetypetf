@@ -1,0 +1,24 @@
+{
+    "name": "SWIFT-CSP-CSCF",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+        "description": "SWIFT's Customer Security Programme (CSP) helps financial institutions ensure their defences against cyberattacks are up to date and effective, to protect the integrity of the wider financial network. Users compare the security measures they have implemented with those detailed in the Customer Security Controls Framework (CSCF). These policies address a subset of SWIFT controls. For more information, visit https://docs.microsoft.com/azure/governance/policy/samples/swift-cscf-v2021",
+        "displayName": "SWIFT-CSP-CSCF",
+        "notScopes": [],
+        "parameters": {
+        },
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/7bc7cd6c-4114-ff31-3cac-59be3157596d",
+        "nonComplianceMessages": [
+          {
+            "message": "SWIFT-CSP-CSCF controls {enforcementMode} be enforced"
+          }
+        ],
+        "scope": "${current_scope_resource_id}",
+        "enforcementMode": null
+    },
+    "location": "${default_location}",
+    "identity": {
+        "type": "SystemAssigned"
+    }
+}

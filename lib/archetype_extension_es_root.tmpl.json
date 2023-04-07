@@ -1,0 +1,12 @@
+{
+    "extend_es_root": {
+      "policy_assignments": [],
+      "policy_definitions": [],
+      "policy_set_definitions": [],
+      "role_definitions": ["bankOnline app owner"],
+      "archetype_config": {
+        "parameters": {},
+        "access_control": {}
+      }
+    }
+  }

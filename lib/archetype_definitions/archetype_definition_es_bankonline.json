@@ -1,0 +1,27 @@
+{
+    "es_bankonline": {
+      "policy_assignments": ["Deny-Resource-Locations", "Deny-RSG-Locations","SWIFT-CSP-CSCF"],
+      "policy_definitions": [],
+      "policy_set_definitions": [],
+      "role_definitions": [],
+      "archetype_config": {
+        "parameters": {
+          "Deny-Resource-Locations": {
+            "listOfAllowedLocations": [
+              "East Us",
+              "West Us"
+            ]
+          },
+          "Deny-RSG-Locations": {
+            "listOfAllowedLocations": [
+              "East Us",
+              "West Us"
+            ]
+          }      
+        },
+        "access_control": {
+        }
+      }
+    }
+  }
+  
