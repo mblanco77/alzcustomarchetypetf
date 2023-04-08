@@ -1,6 +1,5 @@
 # Azure landing zones custom archetypes using Terraform
-
-:::image type="content" source="images/alz-tf-module-overview.png" alt-text="alz img":::
+![alz img](images/alz-tf-module-overview.png)
 
 In this post, I will explain how to use custom archetypes of Azure Landing Zones and how to automate this deployment using enterprise landing zones [module in terraform](https://registry.terraform.io/modules/Azure/caf-enterprise-scale/azurerm/latest)&nbsp;  
 &nbsp;  
@@ -80,7 +79,7 @@ terraform apply
 and the policies that are aplied to it&nbsp;
 &nbsp;
 Management Group (BankingOnline)
-:::image type="content" source="images/managementgroupsfinal.png" alt-text="management groups"::: 
+![management groups](images/managementgroupsfinal.png)
 &nbsp;
 SWIFT policy aplied to the management Group
-:::image type="content" source="images/policyassignment.png" alt-text="policy assignment":::
+![policy assignment](images/policyassignment.png)
