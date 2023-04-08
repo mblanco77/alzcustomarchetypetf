@@ -10,11 +10,6 @@ variable "root_name" {
   default = "alz tf1"
 }
 
-variable "connectivity_resources_location" {
-  type    = string
-  default = "eastus"
-}
-
 variable "primary_location" {
   type = string
   default = "eastus"
