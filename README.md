@@ -27,9 +27,25 @@ This set of instructions will get you started with the deployment of a custom ar
 2. clone github repo to get started&nbsp; 
 ``git clone https://github.com/mblanco77/alzcustomarchetypetf``
  
-3. Optionally you can change the name of the root_id , root_name and the location where you will deploy the resources
+3. Optionally you can change in the **variables.tf** file the name of the root_id , root_name and the location where you will deploy the resources
 
-![varibles](images/variablestf.png) 
+```json
+variable "root_id" {
+  type    = string
+  default = "alz-tf1"
+}
+
+variable "root_name" {
+  type    = string
+  default = "alz tf1"
+}
+
+variable "primary_location" {
+  type = string
+  default = "eastus"
+}
+```
+
 
 4. we will find the custom archetype definition under the [lib\archetype_definitions],
 the name of the custom archetype is **"es_bankonline"** and it has assigned to it the SWIFT-CSP policy that enables particular controls for workloads that have to be complaint with SWIFT framework, also has assigned other two policies that determine where does it has authorized regions to deploy resources.
