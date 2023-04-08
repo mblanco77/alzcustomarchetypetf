@@ -29,7 +29,8 @@ This set of instructions will get you started with the deployment of a custom ar
  
 3. Optionally you can change in the **variables.tf** file the name of the root_id , root_name and the location where you will deploy the resources
 
-```json
+```xml
+
 variable "root_id" {
   type    = string
   default = "alz-tf1"
@@ -44,6 +45,7 @@ variable "primary_location" {
   type = string
   default = "eastus"
 }
+
 ```
 
 
